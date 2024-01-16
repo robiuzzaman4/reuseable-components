@@ -3,6 +3,8 @@ import App from "../App";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import DashboardLayout from "../components/layouts/DashboardLayout";
+import ModalExample from "../pages/ModalExample";
+import FormExample from "../pages/FormExample";
 
 const routes = createBrowserRouter([
   {
@@ -13,10 +15,17 @@ const routes = createBrowserRouter([
         index: true,
         element: <Home />,
       },
-
       {
         path: "about",
         element: <About />,
+      },
+      {
+        path: "modal",
+        element: <ModalExample />,
+      },
+      {
+        path: "form",
+        element: <FormExample />,
       },
     ],
   },
@@ -30,7 +39,6 @@ const routes = createBrowserRouter([
           <h1 className="text-3xl text-purple-500 font-bold p-4">Overview</h1>
         ),
       },
-
       {
         path: "content",
         element: (

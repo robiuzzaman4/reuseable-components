@@ -9,5 +9,7 @@ export default {
       translate: ["group-hover", "hover"],
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 };

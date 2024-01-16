@@ -6,6 +6,8 @@ const Navbar: React.FC = () => {
   const navlinks = [
     { label: "Home", url: "/" },
     { label: "About", url: "/about" },
+    { label: "Modal", url: "/modal" },
+    { label: "Form", url: "/form" },
     { label: "Dashboard", url: "/dashboard" },
   ];
   return (

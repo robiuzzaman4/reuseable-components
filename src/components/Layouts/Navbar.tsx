@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Container from "../ui/Container";
 
 const Navbar: React.FC = () => {
   const navlinks = [
@@ -9,22 +10,24 @@ const Navbar: React.FC = () => {
   ];
   return (
     <div className="bg-white shadow-sm">
-      <div className="w-full max-w-screen-lg mx-auto p-4 flex items-center gap-12">
-        <Link to={"/"} className="text-xl font-bold">
-          Navbar
-        </Link>
-        <div className="flex items-center gap-4">
-          {navlinks.map((link) => (
-            <Link
-              key={link.label}
-              to={link.url}
-              className={`Ftext-sm text-slate-600 font-medium`}
-            >
-              {link.label}
-            </Link>
-          ))}
+      <Container>
+        <div className="w-full flex items-center gap-12 py-4">
+          <Link to={"/"} className="text-xl font-bold">
+            Navbar
+          </Link>
+          <div className="flex items-center gap-4">
+            {navlinks.map((link) => (
+              <Link
+                key={link.label}
+                to={link.url}
+                className={`Ftext-sm text-slate-600 font-medium`}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
         </div>
-      </div>
+      </Container>
     </div>
   );
 };

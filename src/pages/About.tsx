@@ -1,8 +1,12 @@
+import Container from "../components/ui/Container";
+
 const About = () => {
   return (
-    <div className="w-full max-w-screen-lg mx-auto p-4">
-      <h1 className="text-3xl text-purple-500 font-bold">About</h1>
-    </div>
+    <Container>
+      <h1 className="text-3xl text-purple-500 font-bold mt-8">About Page</h1>
+      <div className="flex items-center gap-8 py-10">
+      </div>
+    </Container>
   );
 };
 

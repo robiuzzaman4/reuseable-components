@@ -10,12 +10,12 @@ const Sidebar: React.FC = () => {
   return (
     <div className="w-full max-w-96 bg-slate-100 border-r border-slate-300 min-h-screen p-4 flex flex-col gap-12">
       <h1 className="text-3xl text-purple-500 font-bold">Sidebar</h1>
-      <div className="flex flex-col items-start gap-4">
+      <div className="flex flex-col items-start gap-4 w-full">
         {navlinks.map((link) => (
           <Link
             key={link.label}
             to={link.url}
-            className={`Ftext-sm text-slate-600 font-medium`}
+            className={`Ftext-sm text-slate-600 font-medium w-full hover:bg-slate-300 px-2 py-1 rounded`}
           >
             {link.label}
           </Link>

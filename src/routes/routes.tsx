@@ -2,9 +2,9 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import Home from "../pages/Home";
 import About from "../pages/About";
-import DashboardLayout from "../components/layouts/DashboardLayout";
 import ModalExample from "../pages/ModalExample";
 import FormExample from "../pages/FormExample";
+import DashboardLayout from "../components/Layouts/DashboardLayout";
 
 const routes = createBrowserRouter([
   {
